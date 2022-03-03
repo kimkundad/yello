@@ -201,7 +201,10 @@ body, body, h1, h2, h3, h4, h5, h6, p, a, strong, span {
 .set_wi_line_por{
     width: 90%;
 }
-
+.padding_content_zero {
+    padding: 40px 20px 40px 20px !important;
+    padding-bottom: 0px !important;
+}
 @media only screen and (max-width: 1024px) {
 
     .set_wi_line_por{
@@ -737,8 +740,4 @@ input, input[type="text"], input[type="password"], input[type="email"], input[ty
 }
 .padding_zero {
     padding-bottom: 0px !important
-}
-.padding_content_zero {
-    padding: 40px 45px 40px 45px !important;
-    padding-bottom: 0px !important;
 }
