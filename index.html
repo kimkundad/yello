@@ -9,9 +9,9 @@
 
 <!-- CSS
 ================================================== -->
-<link rel="stylesheet" href="css/style.css?v1">
+<link rel="stylesheet" href="css/style.css?v1.3">
 <link rel="stylesheet" href="css/colors/main.css" id="colors">
-<link rel="stylesheet" href="css/yello.css?v1">
+<link rel="stylesheet" href="css/yello.css?v1.3">
 <link rel="stylesheet" href="dropify-master/dist/css/dropify.css">
 <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
 </head>
@@ -76,7 +76,7 @@
 						  <br>
 						<div class="progress-horizontal">
 							<div class="numerical-rating high" id="div1" data-rating=""></div>
-							<div class="progress-horizontal__bar " data-value="100"></div>
+							<div class="progress-horizontal__bar " data-value="100" data-color="#4a90e2"></div>
 							<div style="text-align: center;padding-top: 10px;">
 								<span class="progress-horizontal__label h5">สถานะเพจ : สำเร็จ</span>
 							</div>
@@ -85,7 +85,7 @@
 						</div>
 						<div class="progress-horizontal">
 							<div class="numerical-rating high" id="div1" data-rating=""></div>
-							<div class="progress-horizontal__bar " data-value="60"></div>
+							<div class="progress-horizontal__bar " data-value="60" data-color="#54ba1d"></div>
 							<div style="text-align: center;padding-top: 10px;">
 							<span class="progress-horizontal__label h5">สถานะไลน์ : กำลังบรอดแคสต์</span>
 							</div>
@@ -157,7 +157,7 @@
 			  <br>
 			<div class="progress-horizontal">
 				<div class="numerical-rating high" id="div1" data-rating=""></div>
-				<div class="progress-horizontal__bar " data-value="100"></div>
+				<div class="progress-horizontal__bar " data-value="100" data-color="#4a90e2"></div>
 				<div style="text-align: center;padding-top: 10px;">
 					<span class="progress-horizontal__label h5">สถานะเพจ : สำเร็จ</span>
 				</div>
@@ -166,7 +166,7 @@
 			</div>
 			<div class="progress-horizontal">
 				<div class="numerical-rating high" id="div1" data-rating=""></div>
-				<div class="progress-horizontal__bar " data-value="60"></div>
+				<div class="progress-horizontal__bar " data-value="60" data-color="#54ba1d"></div>
 				<div style="text-align: center;padding-top: 10px;">
 				<span class="progress-horizontal__label h5">สถานะไลน์ : กำลังบรอดแคสต์</span>
 				</div>
@@ -200,23 +200,29 @@
 		<div id="titlebar">
 			
 			<div class="row ">
-				<div class="col-md-12 text-center">
-					<div >
-						<h3 class="label_select_page" > เลือกเพจ</h3>
-						<select id="example" name="currency">
-							<option value="btc" data-icon="icon/1200px-Facebook_Logo_(2019).png"> Bitcoin (BTC) </option>
-							<option value="eth" data-icon="icon/1200px-Facebook_Logo_(2019).png"> Ethereum (ETH) </option>
-							<option value="bch" data-icon="icon/1200px-Facebook_Logo_(2019).png"> Bitcoin cash (BCH)</option>
-						</select>
+				<div class="col-md-8 text-center">
+					<div class="text-center">
+						<div class="center_box_select">
+							<h3 class="label_select_page" > เลือกเพจ</h3>
+							<select id="example" name="currency">
+								<option value="btc" data-icon="icon/1200px-Facebook_Logo_(2019).png"> Bitcoin (BTC) </option>
+								<option value="eth" data-icon="icon/1200px-Facebook_Logo_(2019).png"> Ethereum (ETH) </option>
+								<option value="bch" data-icon="icon/1200px-Facebook_Logo_(2019).png"> Bitcoin cash (BCH)</option>
+							</select>
+						
+						</div>
 					</div>
 				</div>
+				<div class="col-lg-4"></div>
 			</div>
 		</div>
+
 
 		<div class="row">
 
 			<!-- Profile -->
 			<div class="col-lg-8 col-md-12">
+				
 
 				<div class="row">
 					<div class="col-md-4">
@@ -237,36 +243,22 @@
 					<div class="col-md-4">
 						<p class="form-row form-row-wide center_set">
 							<label for="username">ผู้รับเริ่มต้น
-								<select class="chosen-select-no-single" >
-									<option label="blank">Select Category</option>	
-									<option>Eat & Drink</option>
-									<option>Shops</option>
-									<option>Hotels</option>
-									<option>Restaurants</option>
-									<option>Fitness</option>
-									<option>Events</option>
-								</select>
+								<input type="text">
 							</label>
 						</p>
 					</div>
 					<div class="col-md-4">
 						<p class="form-row form-row-wide center_set">
 							<label for="username">ถึงผู้รับคนที่
-								<select class="chosen-select-no-single" >
-									<option label="blank">Select Category</option>	
-									<option>Eat & Drink</option>
-									<option>Shops</option>
-									<option>Hotels</option>
-									<option>Restaurants</option>
-									<option>Fitness</option>
-									<option>Events</option>
-								</select>
+								<input type="text">
 							</label>
 						</p>
 					</div>
 
 					<div class="col-md-6">
-						<textarea class="WYSIWYG" name="summary" cols="40" rows="5" placeholder="คลิกเพื่อเพิ่มข้อความ"></textarea>
+						<div class="padding-15">
+							<textarea class="WYSIWYG" name="summary" cols="40" rows="5" placeholder="คลิกเพื่อเพิ่มข้อความ"></textarea>
+						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="padding-15">
@@ -300,7 +292,9 @@
 						  </div>
 					</div>
 					<div class="padding-15">
-						<textarea class="WYSIWYG" name="summary" cols="40" rows="5" placeholder="ID ของเพื่อนในเฟนเพจ กรณีต้องการระบุผู้รับ ด้วยตนเอง 1 ID ต่อ 1 บรรทัด"></textarea>
+						<div class="padding-15">
+							<textarea class="WYSIWYG" name="summary" cols="40" rows="5" placeholder="ID ของเพื่อนในเฟนเพจ กรณีต้องการระบุผู้รับ ด้วยตนเอง 1 ID ต่อ 1 บรรทัด"></textarea>
+						</div>
 					</div>
 
 					<div class="padd-top-10 text-center">
@@ -317,20 +311,20 @@
 				<div class="dark_footer show-more visible" >
 					<div class="row">
 						<div class="col-md-12">
-							<a href="#" class="show-more-button active" data-more-title="" data-less-title=""><i class="fa fa-angle-down"></i></a>
+							<a href="#" class="show-more-button active" data-more-title="" data-less-title=""><i class="fa fa-angle-up"></i></a>
 						</div>
 						
 						<div class="col-md-4">
-							<p class="pad-top-10">
-								** ข้อความส่งเฉแลี่ยได้ไม่เกิน 40 bubbles ต่อนาที <br>
-                                เพื่อให้เป็นไปตามนโยบายของทาง Line ที่ได้กำหนดไว้ **
+							<p class="pad-top-10 line_h_mo">
+								** ข้อแนะนำใน1เพจอย่าบรอดแคสต์บ่อยจนเกินไป อาทิตย์ละ 1-2 ครั้งก็พอ
+								เพื่อไม่ให้เป็นการรบกวนลูกค้ามากเกินไป หากบรอดแคสต์หลายเพจแนะนำ สลับเฟสบุ๊คส่วนตัวในการบรอดแคสต์เรื่อยๆ **
 							</p>
 						</div>
 						<div class="col-md-8">
 							<div class="pricing-list-container">
-								<div class="progress-horizontal" style="width: 90%;">
+								<div class="progress-horizontal set_wi_line_por" >
 									<div class="numerical-rating high numerical_set_2" id="div1" data-rating=""></div>
-									<div class="progress-horizontal__bar bar_set_2" data-value="68"></div>
+									<div class="progress-horizontal__bar bar_set_2" data-value="100" data-color="#4a90e2"></div>
 								</div>
 							</div>
 							<br>

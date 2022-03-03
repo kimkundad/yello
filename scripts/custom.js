@@ -1387,6 +1387,8 @@ mr = (function (mr, $, window, document){
 
                 bar.prepend(progress);
 
+		
+
                 barObject.element = bar;
                 barObject.progress = progress;
                 barObject.value = parseInt(bar.attr('data-value'),10)+"%";
@@ -1402,7 +1404,7 @@ mr = (function (mr, $, window, document){
                     barObject.animate = true;
                 }else{
                     progress.css('width',barObject.value);
-					if(parseInt(bar.attr('data-value'),10) < 10 ){
+				/*	if(parseInt(bar.attr('data-value'),10) < 10 ){
 						progress.css('background','#f91942');
 					}
 					if(parseInt(bar.attr('data-value'),10) < 30 ){
@@ -1412,8 +1414,10 @@ mr = (function (mr, $, window, document){
 						progress.css('background','#54ba1d');
 					}
 					if(parseInt(bar.attr('data-value'),10) >= 70 ){
-						progress.css('background','#4a90e2');
-					}
+						
+					} */
+
+					progress.css('background', (bar.attr('data-color')));
 					
                 }
                 progressBars.push(barObject);

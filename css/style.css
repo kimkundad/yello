@@ -9208,7 +9208,7 @@ span.like-icon {
 .dashboard-nav-inner {
 	height: 100%;
 	width: 277px;
-	overflow-y: scroll;
+/*	overflow-y: scroll; */
 	position: relative;
 	display: block;
 	padding: 10px 0 25px 0;
@@ -9218,8 +9218,8 @@ span.like-icon {
 
 .dashboard-nav-inner {
     max-height: 900px;
-    width: calc(100% + 17px);
-    overflow-y: scroll;
+    width: 100%;
+ /*   overflow-y: scroll; */
     position: relative;
     display: block;
     padding: 10px 0 25px 0;
@@ -9228,7 +9228,7 @@ span.like-icon {
 @media (max-width: 991px) {
 	.dashboard-nav-inner {
 	    max-height: 900px;
-	    width: calc(100% + 18px);
+	    width: 100%;
 	}
 }
 /* Navigation Scrolling - End */
@@ -13317,7 +13317,7 @@ img.mfp-img {
 	.dashboard #logo a img {
 		top: 0;
 		position: relative;
-		max-height: 40px;
+		max-height: 50px;
 		transform: translate3d(0,0,0);
 	}
 
@@ -13490,7 +13490,7 @@ img.mfp-img {
 	    width: 100%;
 	}
 
-	
+
 	.dashboard-content {
 	    padding: 120px 5%;
 	    padding-bottom: 150px;

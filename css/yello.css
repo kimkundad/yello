@@ -64,7 +64,7 @@ body, body, h1, h2, h3, h4, h5, h6, p, a, strong, span {
 }
 #navigation.style-1 ul li a {
     height: 55px;
-    font-size: 30px;
+    font-size: 28px;
 }
 #navigation.style-1 ul li a {
     padding-top: 10px;
@@ -83,10 +83,10 @@ body, body, h1, h2, h3, h4, h5, h6, p, a, strong, span {
     display: inline-block;
 }
 .nav-item-r{
-    width: 300px;
+    width: 320px;
 }
 .font-r{
-    font-size: 24px;
+    font-size: 28px;
 }
 @media only screen and (max-width: 1024px) {
     .right-side {
@@ -198,10 +198,26 @@ body, body, h1, h2, h3, h4, h5, h6, p, a, strong, span {
     color: #060606!important;
 }
 
+.set_wi_line_por{
+    width: 90%;
+}
 
 @media only screen and (max-width: 1024px) {
 
+    .set_wi_line_por{
+        width: 100%;
+    }
 
+    .line_h_mo{
+        line-height: 15px;
+}
+    
+    .m_pad_top{
+        padding-top: 15px;
+    }
+    .m_pad_left_set{
+        margin-left: -40px;
+    }
     .example-a li span, .example-select-box li span {
         font-size: 18px!important;
         margin-left: 20px!important;
@@ -481,7 +497,7 @@ body, body, h1, h2, h3, h4, h5, h6, p, a, strong, span {
     margin-bottom: 0px;
 }
 .numerical-rating.high{
-    margin-left: -25px;
+    margin-left: -30px;
 }
 .bar_set_2{
     height: 20px;
@@ -642,18 +658,18 @@ textarea:focus {
     padding: 5px 15px;
     border-radius: 20px;
     width: fit-content;
-    margin-top: 15px;
+    height: 92px;
 }
 .course-teacher2 .teachet-info {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
 }
 .course-teacher2 .teachet-info img {
-    max-width: 75px;
-    max-height: 75px;
+    max-width: 70px;
+    max-height: 70px;
 }
 .padd-top-10{
     padding-top: 0px;
@@ -682,4 +698,47 @@ textarea:focus {
 #dashboard{
     padding-bottom: 200px;
 }
+.center_box_select{
+    position: relative;
+    display: inline-block;
+}
 
+input, input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea, select {
+    margin: 0 0 0px 
+}
+#dashboard #titlebar {
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+.dropify-wrapper .dropify-message p {
+    margin: 15px 0 0 0 !important;
+}
+
+.checkboxes input[type=radio] {
+    display: none;
+}
+.checkboxes input[type=radio]:checked + label:before {
+    background-color: #01b901;
+    border-color: #069f06;
+}
+.checkboxes input[type=radio]:checked + label:before {
+    content: "\f00c";
+}
+.body-sign {
+    display: table;
+    height: 80vh;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+.body-sign .center-sign {
+    display: table-cell;
+    vertical-align: middle;
+}
+.padding_zero {
+    padding-bottom: 0px !important
+}
+.padding_content_zero {
+    padding: 40px 45px 40px 45px !important;
+    padding-bottom: 0px !important;
+}
