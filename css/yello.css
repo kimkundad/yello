@@ -205,7 +205,21 @@ body, body, h1, h2, h3, h4, h5, h6, p, a, strong, span {
     padding: 40px 20px 40px 20px !important;
     padding-bottom: 0px !important;
 }
+.body-sign {
+    display: table;
+    height: 80vh;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
 @media only screen and (max-width: 1024px) {
+    .body-sign {
+        display: table;
+        height: 100vh;
+        margin: 0 auto;
+        padding: 0 15px;
+        width: 100%;
+    }
 
     .set_wi_line_por{
         width: 100%;
@@ -727,13 +741,7 @@ input, input[type="text"], input[type="password"], input[type="email"], input[ty
 .checkboxes input[type=radio]:checked + label:before {
     content: "\f00c";
 }
-.body-sign {
-    display: table;
-    height: 80vh;
-    margin: 0 auto;
-    padding: 0 15px;
-    width: 100%;
-}
+
 .body-sign .center-sign {
     display: table-cell;
     vertical-align: middle;
