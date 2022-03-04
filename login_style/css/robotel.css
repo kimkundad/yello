@@ -2604,7 +2604,7 @@ a.rate-review {
     border: 1px solid #e0e0e0;
     border-radius: 50px;
     font-size: 16px;
-    color: #084BA8;
+    color: #a3a3a3;
     font-weight: 500;
     padding: 5px 20px;
     margin-top: 20px;
@@ -2613,6 +2613,22 @@ a.rate-review {
     -moz-transition: 0.3s;
     transition: 0.3s;
 }
+
+a.rate-review:hover {
+    text-decoration: none;
+    border: 1px solid #116A76;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    padding: 5px 20px;
+    margin-top: 20px;
+    background: #116A76;
+    display: inline-block;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
 a.rate-review i{
     font-size: 12px;
 }
@@ -3440,4 +3456,27 @@ button[disabled], html input[disabled] {
     position: fixed;
     background: #0000003b;
     opacity: 0.96;
+}
+
+#sign-in-dialog .mfp-close, #small-dialog .mfp-close {
+    color: #666;
+    background-color: #e4e4e4;
+    border-radius: 50%;
+    top: 28px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+}
+.small-dialog-header {
+    text-align: center;
+    font-size: 22px;
+    width: calc(100% + 80px);
+    position: relative;
+    left: -40px;
+    top: 0;
+    border-radius: 4px 4px 0 0;
+    display: inline-block;
+    background-color: #f6f6f6;
+    padding: 35px 40px;
+    margin-bottom: 40px;
 }

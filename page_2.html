@@ -12,7 +12,7 @@
 ================================================== -->
 <link rel="stylesheet" href="css/style.css?v1.3">
 <link rel="stylesheet" href="css/colors/main.css" id="colors">
-<link rel="stylesheet" href="css/yello.css?v1.6">
+<link rel="stylesheet" href="css/yello.css?v1.7">
 <link rel="stylesheet" href="dropify-master/dist/css/dropify.css">
 <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
 </head>
@@ -307,7 +307,7 @@
 
 					<div class="col-md-12 col-xs-12 text-center">
 						<div class="padding-20">
-							<a href="#" class="btns button_submit_green">เริ่มบรอดแคสต์ </a>
+							<a href="#" class="btns button_submit_green broadcast_fb">เริ่มบรอดแคสต์ </a>
 						</div>
 						
 					</div>
@@ -421,7 +421,7 @@
 <script type="text/javascript" src="scripts/custom.js"></script>
 <script src="scripts/custom-selectbox.js"></script>
 <script type="text/javascript" src="dropify-master/dist/js/dropify.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
     $('#example').IconSelectBox(true); // isImg: boolean 
     $('#example2').IconSelectBox(false); // isImg: boolean 
@@ -435,6 +435,55 @@
 					'error':   'Ooops, something wrong happended.'
     }
 				});
+	});
+
+
+	
+
+	$(".broadcast_fb").click(function (e) {
+		e.preventDefault();
+		
+		Swal.fire({
+		title: 'ยืนยันการส่งข้อความ',
+		html:
+		'คุณต้องการส่งข้อความไปยังลูกเพจของเพจ ' +
+		'<img src="images/159869104_2941824059364447_7435172432550377688_n.jpg" height="60"> @CPUCore2Duo  · ร้านขายคอมพิวเตอร์ ใช่หรือไม่',
+		showCancelButton: true,
+		confirmButtonText: 'Yes',
+		}).then((result) => {
+		/* Read more about isConfirmed, isDenied below */
+		if (result.isConfirmed) {
+			
+			
+
+			let timerInterval
+				Swal.fire({
+				title: 'รอสักครู่!',
+				html: 'กำลังรวบรวมเพจ เลขที่ <b></b>.',
+				timer: 10000,
+				timerProgressBar: true,
+				didOpen: () => {
+					Swal.showLoading()
+					const b = Swal.getHtmlContainer().querySelector('b')
+					timerInterval = setInterval(() => {
+					b.textContent = Swal.getTimerLeft()
+					}, 100)
+				},
+				willClose: () => {
+					clearInterval(timerInterval)
+				}
+				}).then((result) => {
+				/* Read more about handling dismissals below */
+				if (result.dismiss === Swal.DismissReason.timer) {
+					console.log('I was closed by the timer')
+				}
+				})
+
+
+
+		}
+		})
+		
 	});
   </script>
 
