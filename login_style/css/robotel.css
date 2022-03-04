@@ -178,10 +178,10 @@ input:checked + .slider,
 #mapnav-buttons a:hover,
 #sign-in-dialog .mfp-close:hover,
 #small-dialog .mfp-close:hover {
-    background-color: #084BA8;
+    background-color: #116A76 ;
 }
 a.button:hover{
-    background-color: #729ECC;
+    background-color: #116A76 ;
 }
 .shop.rev_slider .slotholder:after, .home.rev_slider .slotholder:after {
     width: 100%;
@@ -2156,10 +2156,7 @@ background: linear-gradient(to right, rgba(255,255,255,0) 20%, rgba(255,255,255,
 .pro_table_bot{
     top: -180px; position: relative;
 }
-.small-dialog-header {
-    left: 0px;
-    width: 100%;
-}
+
 #package-dialog {
     background: #fff;
     padding: 0px;
@@ -2719,9 +2716,7 @@ a.rate-review_v2 i{
 .get_curser{
     cursor: pointer;
 }
-.small-dialog-header {
-    padding: 35px 40px;
-}
+
 .message-by-headline2 h5 {
     padding-top: 20px;
     font-weight: 600;
@@ -2739,10 +2734,7 @@ a.rate-review_v2 i{
     font-size: 15px;
     font-family: aktiv-grotesk-thai-r, sans-serif;
 }
-.small-dialog-header {
 
-    margin-bottom: 0px !important;
-}
 .message-by-headline2 img{
     height: 30px;
 }
@@ -2776,17 +2768,11 @@ a.rate-review_v2 i{
 .add-listing-headline{
     padding: 10px 40px;
 }
-.small-dialog-header h3 {
-    padding: 0;
-    margin: 0;
-    font-size: 22px;
-}
+
 .h5_addd_new{
     font-size: 16px;
 }
-.small-dialog-header {
-    padding: 17px 32px!important;
-}
+
 
 
 .list-5 {
@@ -3442,4 +3428,16 @@ button[disabled], html input[disabled] {
     font-size: 12px;
     font-weight: 600;
     margin: 0 0 5px;
+}
+
+.mfp-bg {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    overflow: hidden;
+    position: fixed;
+    background: #0000003b;
+    opacity: 0.96;
 }

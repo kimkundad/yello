@@ -97,6 +97,30 @@
        
         </section>
     </div>
+    
+
+            <!-- Sign In Popup -->
+			<div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
+
+				<div class="small-dialog-header">
+					<h3>โปรโมชั่นเด็ดประจำเดือนนี้</h3>
+				</div>
+
+				<!--Tabs -->
+				<div class="sign-in-form style-1 text-center">
+                    
+                    <img src="images/promotion.jpg" class="img-responsive">
+                    <h6 class="head_support">
+                        LINE : @broadpang
+                    </h6>
+                    <a href="">
+                        <img src="icon/addfriend.png" alt="" height="35">
+                    </a>
+                    <br>
+					<a href="#" class="rate-review " id="close"> ตกลง</a>
+				</div>
+			</div>
+			<!-- Sign In Popup / End -->
 
 
 <!-- Back To Top Button -->
@@ -114,5 +138,19 @@
 <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
 <script type="text/javascript" src="scripts/tooltips.min.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
+
+<script>
+    $.magnificPopup.open({
+  items: {
+      src: '#sign-in-dialog',
+      type: 'inline'
+  }
+});
+
+$('#close').on( "click", function() {
+  $.magnificPopup.close();
+});
+
+</script>
 </body>
 </html>

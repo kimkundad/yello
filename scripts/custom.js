@@ -356,6 +356,8 @@ $(document).ready(function(){
 		});
 	});
 
+	
+
 	$('.popup-with-zoom-anim').magnificPopup({
 		 type: 'inline',
 
