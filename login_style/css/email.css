@@ -1,0 +1,187 @@
+@import url("https://p.typekit.net/p.css?s=1&k=cgp6jrq&ht=tk&f=46179.46180.46181.46182&a=46116565&app=typekit&e=css");
+
+@font-face {
+font-family:"aktiv-grotesk-thai-b";
+src:url("https://use.typekit.net/af/56dc97/00000000000000007735db98/30/l?primer=55460fc0f9c0872d8fb7cf48aa74998707c06bdf202865a7c23f10c82ea380b1&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/56dc97/00000000000000007735db98/30/d?primer=55460fc0f9c0872d8fb7cf48aa74998707c06bdf202865a7c23f10c82ea380b1&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/56dc97/00000000000000007735db98/30/a?primer=55460fc0f9c0872d8fb7cf48aa74998707c06bdf202865a7c23f10c82ea380b1&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
+}
+
+@font-face {
+font-family:"aktiv-grotesk-thai-r";
+src:url("https://use.typekit.net/af/d34717/00000000000000007735dbb2/30/l?primer=55460fc0f9c0872d8fb7cf48aa74998707c06bdf202865a7c23f10c82ea380b1&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/d34717/00000000000000007735dbb2/30/d?primer=55460fc0f9c0872d8fb7cf48aa74998707c06bdf202865a7c23f10c82ea380b1&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/d34717/00000000000000007735dbb2/30/a?primer=55460fc0f9c0872d8fb7cf48aa74998707c06bdf202865a7c23f10c82ea380b1&fvd=n3&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:300;
+}
+
+@font-face {
+font-family:"aktiv-grotesk-thai";
+src:url("https://use.typekit.net/af/929245/00000000000000007735dbb4/30/l?primer=55460fc0f9c0872d8fb7cf48aa74998707c06bdf202865a7c23f10c82ea380b1&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/929245/00000000000000007735dbb4/30/d?primer=55460fc0f9c0872d8fb7cf48aa74998707c06bdf202865a7c23f10c82ea380b1&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/929245/00000000000000007735dbb4/30/a?primer=55460fc0f9c0872d8fb7cf48aa74998707c06bdf202865a7c23f10c82ea380b1&fvd=n5&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:500;
+}
+
+@font-face {
+font-family:"aktiv-grotesk-thai";
+src:url("https://use.typekit.net/af/cbfc3e/00000000000000007735dbaa/30/l?primer=55460fc0f9c0872d8fb7cf48aa74998707c06bdf202865a7c23f10c82ea380b1&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/cbfc3e/00000000000000007735dbaa/30/d?primer=55460fc0f9c0872d8fb7cf48aa74998707c06bdf202865a7c23f10c82ea380b1&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/cbfc3e/00000000000000007735dbaa/30/a?primer=55460fc0f9c0872d8fb7cf48aa74998707c06bdf202865a7c23f10c82ea380b1&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+body, html,h1,h2,h3,h4,h5,h6,p,span,strong,a{
+    font-family: aktiv-grotesk-thai-r,sans-serif;
+    }
+    * {
+        font-family: aktiv-grotesk-thai-r,sans-serif;
+        font-weight: 400;
+    }
+
+    /**This is to overwrite Outlook.com’s Embedded CSS************/
+table {border-collapse:separate;}
+a, a:link, a:visited {text-decoration:none; color: #488dc6}
+h2,h2 a,h2 a:visited,h3,h3 a,h3 a:visited,h4,h5,h6,.t_cht {color:#333333 !important}
+p {margin-bottom: 0}
+.ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td {line-height: 100%}
+/**This is to center your email in Outlook.com************/
+.ExternalClass {width: 100%;}
+
+/* General Resets */
+#outlook a {padding:0;}
+body, #body-table {height:100% !important; width:100% !important; margin:0 auto; padding:0; line-height:100%; !important; font-family: aktiv-grotesk-thai-r,sans-serif; font-size:13px;}
+img, a img {border:0; outline:none; text-decoration:none;}
+.image-fix {display:block;}
+table, td {border-collapse:collapse;}
+
+/* Client Specific Resets */
+.ReadMsgBody {width:100%;} .ExternalClass{width:100%;}
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100% !important;}
+.ExternalClass * {line-height: 100% !important;}
+table, td {mso-table-lspace:0pt; mso-table-rspace:0pt;}
+img {outline: none; border: none; text-decoration: none; -ms-interpolation-mode: bicubic;}
+body, table, td, p, a, li, blockquote {-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;}
+body.outlook img {width: auto !important;max-width: none !important;}
+
+/* Start Template Styles */
+/* Main */
+body{ -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0; -webkit-font-smoothing: antialiased;}
+body, #body-table {background-color: #e8e8e8 margin:0 auto !important;; margin:0 auto !important; text-align:center !important;}
+p {padding:0; margin: 0; line-height: 24px; font-family: aktiv-grotesk-thai-r,sans-serif;}
+a, a:link {color: #1c344d;text-decoration: none !important;}
+.footer-link a, .nav-link a {color: #fff6e5;}
+
+/* Yahoo Mail */
+.thread-item.expanded .thread-body{background-color: #edf6ea !important;}
+.thread-item.expanded .thread-body .body, .msg-body{display:block !important;}
+#body-table .undoreset table {display: table !important;table-layout: fixed !important;}
+
+/* Start Media Queries */
+@media only screen and (max-width: 640px) {
+	a[href^="tel"], a[href^="sms"] {text-decoration: none;pointer-events: none;	cursor: default;}
+	.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {text-decoration: default;	pointer-events: auto;cursor: default;}	
+	*[class].full-width {width: 100%!important;}
+	*[class].mobile-width {width: 440px !important; padding: 0 4px;}
+	*[class].content-width {width: 360px!important;}
+	*[class].content-width-menu {width: 360px!important;}
+	*[class].center {text-align:center !important; height:auto !important;}
+	*[class].center-stack {padding-bottom:20px !important; text-align:center !important; height:auto !important;}
+	*[class].stack {padding-bottom:20px !important; height: auto !important;}
+	*[class].gallery {padding-bottom: 20px!important;}
+	*[class].fluid-img {height:auto !important; max-width:600px !important; width: 100% !important;}
+	*[class].block {display: block!important;}
+	*[class].midaling { width:100% !important; border:none !important; }
+	*[class].emailImage{height:auto !important;max-width:600px !important;width: 100% !important;}
+}
+@media only screen and (max-width: 480px) {
+	*[class].full-width {width: 100%!important;}
+	*[class].mobile-width {width: 320px!important; padding: 0 4px;}
+	*[class].content-width {width: 240px!important;}
+	*[class].content-width-menu {width: 320px!important;}
+	*[class].navlink {font-size:13px !important;}
+	*[class].center {text-align:center !important; height:auto !important;}
+	*[class].center-stack {padding-bottom:20px !important; text-align:center !important; height:auto !important;}
+	*[class].stack {padding-bottom:20px !important; height: auto !important;}
+	*[class].gallery {padding-bottom: 20px!important;}
+	*[class].fluid-img {height:auto !important; max-width:600px !important; width: 100% !important; min-width:320px !important;}
+	*[class].midaling { width:100% !important; border:none !important; }
+	*[class].navlink{ width:600px !important; border:none !important; }
+	*[class].footer_link{display:block !important; margin-bottom:5px !important;}
+	*[class].hide{display:none !important;}
+}
+@media only screen and (max-width: 320px) {
+	*[class].full-width {width: 100%!important;}
+	*[class].mobile-width {width: 100%!important; padding: 0 4px;}
+	*[class].content-width {width: 240px!important;}
+	*[class].center {text-align:center !important; height:auto !important;}
+	*[class].center-stack {padding-bottom:30px !important; text-align:center !important; height:auto !important;}
+	*[class].stack {padding-bottom:30px !important; height: auto !important;}
+	*[class].gallery {padding-bottom: 20px!important;}
+	*[class].fluid-img {height:auto !important; max-width:600px !important; width: 100% !important; min-width:320px !important;}
+	*[class].midaling { width:100% !important; border:none !important;}
+}
+
+
+    .text_header{
+        font-size:22px; mso-line-height-rule:exactly; line-height:20px; color:#555555; font-weight:bold; font-family: aktiv-grotesk-thai-b,sans-serif;
+    }
+    p{
+        font-size: 14px;
+    }
+    .set-mar-kim{
+        margin :150px 0px 150px 0px;
+    }
+    .text-danger{
+        color:#D44848!important;
+    }
+    .bor_f_con{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .emailImage_logo{
+        max-width: 200px;
+    }
+    .bor_rad{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .bor_rad_bot{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+		background-color: #fff!important;
+    }
+	.bg_white{
+		background-color: #fff!important;
+	}
+	.text-success{
+		color:#7FB344!important;
+	}
+	.content-body{
+		padding: 10px 30px 10px 30px;
+	}
+	b{
+		color:#333333!important;
+		font-size: 14px;
+		font-weight:bold; font-family: aktiv-grotesk-thai-b,sans-serif;
+	}
+	.num_otp{
+		color:#D44848!important;
+		font-size: 38px;
+		font-weight:bold; font-family: aktiv-grotesk-thai-b,sans-serif;
+	}
+	.btn_next{
+		color:#ffffff!important;
+		font-family: aktiv-grotesk-thai-b,sans-serif; 
+		font-size:14x; 
+		text-decoration:none !important;
+		color: #ffffff;
+    display: block;
+    line-height: 12px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 190px;
+    -webkit-text-size-adjust: none;
+    background: transparent linear-gradient(180deg, #F76D6D 0%, #B11B1B 100%) 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 6px #00000034;
+border-radius: 4px;
+		
+	}
+	.btn_next_out{
+    
+	}

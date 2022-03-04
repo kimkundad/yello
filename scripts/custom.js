@@ -896,6 +896,7 @@ $(document).ready(function(){
     $('.pricing-price').children('input').before('<i class="data-unit">'+ fieldUnit + '</i>');
 
 
+	
 
 	/*----------------------------------------------------*/
 	/*  Notifications
