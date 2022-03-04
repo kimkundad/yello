@@ -140,12 +140,14 @@
 <script type="text/javascript" src="scripts/custom.js"></script>
 
 <script>
+     setTimeout(function(){
     $.magnificPopup.open({
   items: {
       src: '#sign-in-dialog',
       type: 'inline'
   }
 });
+}, 2000);
 
 $('#close').on( "click", function() {
   $.magnificPopup.close();
