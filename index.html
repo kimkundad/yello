@@ -54,13 +54,13 @@
 					<ul class="nav-pills  " id="responsive">
 
 						<li class="nav-item">
-							<a href="index.html" class="nav-link active"><img src="icon/1200px-Facebook_Logo_(2019).png" alt=""> <strong>Facebook</strong> </a>
+							<a href="#" class="nav-link active" id="facebook"><img src="icon/1200px-Facebook_Logo_(2019).png" alt=""> <strong>Facebook</strong> </a>
 						</li>
 						<li class="nav-item">
-							<a href="page_2.html" class="nav-link "><img src="icon/line.png" alt=""> <strong>LINE OA</strong></a>
+							<a href="#" class="nav-link " id="line"><img src="icon/line.png" alt=""> <strong>LINE OA</strong></a>
 						</li>
 						<li class="nav-item-r tap_s">
-							<a href="page_3.html" class="nav-link "><img src="icon/speak.png" alt=""> <strong class="font-r">ติดต่อทีมซัพพอร์ต</strong></a>
+							<a href="#" class="nav-link " id="contact"><img src="icon/speak.png" alt=""> <strong class="font-r">ติดต่อทีมซัพพอร์ต</strong></a>
 						</li>
 
 						<div class="profile_menu visible-sm">
@@ -108,7 +108,7 @@
 					<ul class="nav-pills hidden-sm">
 						
 						<li class="nav-item-r">
-							<a href="page_3.html" class="nav-link "><img src="icon/speak.png" alt=""> <strong class="font-r">ติดต่อทีมซัพพอร์ต</strong></a>
+							<a href="#" class="nav-link " id="contact"><img src="icon/speak.png" alt=""> <strong class="font-r">ติดต่อทีมซัพพอร์ต</strong></a>
 						</li>
 						
 						
@@ -396,6 +396,17 @@
 					'error':   'Ooops, something wrong happended.'
     }
 				});
+
+			
+		$("ul.nav-pills li > a").on("click", function() {
+			alert(this.id);
+			$("ul").find(".active").removeClass("active");
+			$(this).addClass("active");
+			$("ul").find("ul").css("display", "none"); /* close submenu */
+			$(this).next("ul").css("display", "block"); /*display submenu */
+		});
+
+
 	});
 
 	
